@@ -7,9 +7,9 @@ func PadArtRows(rows []string, width int) []string {
 		return rows
 	}
 	result := make([]string, len(rows))
-	for i, v := range rows{
+	for i, v := range rows {
 		padding := width - len(v)
-		if padding > 0{
+		if padding > 0 {
 			result[i] = v + strings.Repeat(" ", padding)
 		} else {
 			result[i] = v

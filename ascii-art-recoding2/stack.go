@@ -11,9 +11,12 @@ func StackTwo(top []string, bottom []string) []string {
 func StackAll(blocks [][]string) []string {
 	if len(blocks) == 0 {
 		return []string{}
+
+	}
 	var result []string
 	for i := 0; i < len(blocks); i++ {
 		result = StackTwo(result, blocks[i])
 	}
 	return result
+
 }
